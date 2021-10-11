@@ -8,7 +8,7 @@ dictionary = PyDictionary()
 root = Tk()
 
 # Set geometry
-root.geometry("600x400")
+root.geometry("400x400")
 
 # Set Background Color
 root.configure(background='grey')
