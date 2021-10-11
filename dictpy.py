@@ -1,7 +1,9 @@
 # @sumitvarun
 # Import Required Library
 from tkinter import *
+import tkinter
 from PyDictionary import PyDictionary
+import webbrowser
 
 # Create Objects
 dictionary = PyDictionary()
@@ -22,13 +24,20 @@ def dict():
 	antonym.config(text=dictionary.antonym(word.get()))
 
 
+#Define a callback function
+def callback(url):
+   webbrowser.open_new_tab(url)
+
 # Add Labels, Button and Frames
 Label(root, text="Dictionary", font=(
 	"Helvetica 20 bold"), fg="#900431", bg= "#DE3163").pack(pady=10)
 
-# Add Labels, Button and Frames
-Label(root, text="SUMITVARUN", font=(
-	"Helvetica 10"), fg="#784212", bg= "#D68910").pack(pady=10)
+
+#Create a Label to display the link
+link = Label(root, text="SUMITVARUN",font=('Helveticabold', 10), cursor="hand2",fg="#784212", bg= "#D68910")
+link.pack()
+link.bind("<Button-1>", lambda e:
+callback("https://github.com/sumitvarun"))
 
 # Frame 1
 frame = Frame(root)
@@ -58,7 +67,17 @@ antonym = Label(frame3, text="", font=("Helvetica 10"))
 antonym.pack(side=LEFT)
 frame3.pack(pady=10)
 
-Button(root, text="Submit", font=("Helvetica 15 bold"), command=dict,fg="white", bg= "#1E8449").pack()
+Button(root, text="Submit", font=("Helvetica 15 bold"), command=dict,fg="#DCE775", bg= "#1E8449").pack()
+frame3.pack(pady=10)
+
+#Create a Label to display the link
+link = Label(root, text="GitHub",font=('Helveticabold', 15), cursor="hand2",fg="#000000", bg= "#BDBDBD")
+link.pack()
+link.bind("<Button-1>", lambda e:
+callback("https://github.com/sumitvarun"))
+
+
+
 
 # Execute Tkinter
 root.mainloop()
