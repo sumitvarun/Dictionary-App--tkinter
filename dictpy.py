@@ -24,11 +24,15 @@ def dict():
 
 # Add Labels, Button and Frames
 Label(root, text="Dictionary", font=(
-	"Helvetica 20 bold"), fg="#283747", bg= "#DE3163").pack(pady=10)
+	"Helvetica 20 bold"), fg="#900431", bg= "#DE3163").pack(pady=10)
+
+# Add Labels, Button and Frames
+Label(root, text="SUMITVARUN", font=(
+	"Helvetica 10"), fg="#784212", bg= "#D68910").pack(pady=10)
 
 # Frame 1
 frame = Frame(root)
-Label(frame, text="Type Word", font=("Helvetica 15 bold"), bg= "#3498DB", fg="white").pack(side=LEFT)
+Label(frame, text="Type Word", font=("Helvetica 15 bold"), bg= "#3498DB", fg="#043247").pack(side=LEFT)
 word = Entry(frame, font=("Helvetica 15 bold"),)
 word.pack()
 frame.pack(pady=10)
