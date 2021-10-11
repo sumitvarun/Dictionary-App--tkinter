@@ -71,10 +71,10 @@ Button(root, text="Submit", font=("Helvetica 15 bold"), command=dict,fg="#DCE775
 frame3.pack(pady=10)
 
 #Create a Label to display the link
-link = Label(root, text="GitHub",font=('Helveticabold', 15), cursor="hand2",fg="#000000", bg= "#BDBDBD")
-link.pack()
-link.bind("<Button-1>", lambda e:
-callback("https://github.com/sumitvarun"))
+#link = Label(root, text="GitHub",font=('Helveticabold', 15), cursor="hand2",fg="#000000", bg= "#BDBDBD")
+#link.pack()
+#link.bind("<Button-1>", lambda e:
+#callback("https://github.com/sumitvarun"))
 
 
 
