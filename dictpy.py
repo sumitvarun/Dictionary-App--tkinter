@@ -1,3 +1,4 @@
+# @sumitvarun
 # Import Required Library
 from tkinter import *
 from PyDictionary import PyDictionary
@@ -9,6 +10,7 @@ root = Tk()
 # Set geometry
 root.geometry("600x400")
 
+# Set Background Color
 root.configure(background='grey')
 
 
